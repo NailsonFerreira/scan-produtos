@@ -112,8 +112,8 @@ public class MainActivity extends AppCompatActivity implements OnProductListener
 
     @Override
     public void barcodeCapture(ProductModel model) {
-        IntentIntegrator intent = new IntentIntegrator(MainActivity.this);
-        intent.initiateScan();
+        IntentIntegrator integrator = new IntentIntegrator(MainActivity.this);
+        integrator.initiateScan();
     }
 
     @Override
